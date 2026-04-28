@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="mRtTf_12imLOZL9uQujm">
+    <mxGraphModel dx="1084" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-9" edge="1" parent="1" source="ent_cust" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="T3k6JcoWu_p6y6TCV5br-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_cust" parent="1" style="whiteSpace=wrap;html=1;fontStyle=1" value="KHACH_HANG" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-18" edge="1" parent="1" source="ent_ord" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="T3k6JcoWu_p6y6TCV5br-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-19" edge="1" parent="1" source="ent_ord" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="T3k6JcoWu_p6y6TCV5br-17" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_ord" parent="1" style="whiteSpace=wrap;html=1;fontStyle=1" value="DON_HANG" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-13" edge="1" parent="1" source="ent_prod" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="T3k6JcoWu_p6y6TCV5br-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-15" edge="1" parent="1" source="ent_prod" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="T3k6JcoWu_p6y6TCV5br-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ent_prod" parent="1" style="whiteSpace=wrap;html=1;fontStyle=1" value="SAN_PHAM" vertex="1">
+          <mxGeometry height="60" width="120" x="620" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_buys" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Mua" vertex="1">
+          <mxGeometry height="80" width="80" x="220" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_detail" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Chi tiet" vertex="1">
+          <mxGeometry height="80" width="80" x="500" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="att_cid" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ma_KH (PK)" vertex="1">
+          <mxGeometry height="50" width="80" x="20" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="att_cname" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ho_Ten" vertex="1">
+          <mxGeometry height="50" width="80" x="100" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="att_pid" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ma_SP (PK)" vertex="1">
+          <mxGeometry height="50" width="80" x="590" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="att_pname" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ten_SP" vertex="1">
+          <mxGeometry height="50" width="80" x="680" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="att_qty" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="So_Luong" vertex="1">
+          <mxGeometry height="50" width="80" x="460" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="att_uprice" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Gia_Ban" vertex="1">
+          <mxGeometry height="50" width="80" x="540" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" edge="1" parent="1" source="ent_cust" target="rel_buys" value="(1)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" edge="1" parent="1" source="rel_buys" target="ent_ord" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" edge="1" parent="1" source="ent_ord" target="rel_detail" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" edge="1" parent="1" source="rel_detail" target="ent_prod" value="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l5" edge="1" parent="1" source="ent_cust" target="att_cid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l6" edge="1" parent="1" source="ent_cust" target="att_cname">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l7" edge="1" parent="1" source="ent_prod" target="att_pid">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l8" edge="1" parent="1" source="ent_prod" target="att_pname">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l9" edge="1" parent="1" source="rel_detail" target="att_qty">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="l10" edge="1" parent="1" source="rel_detail" target="att_uprice">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-2" edge="1" parent="1" source="T3k6JcoWu_p6y6TCV5br-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ent_cust" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="email" vertex="1">
+          <mxGeometry height="40" width="80" x="20" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-4" edge="1" parent="1" source="T3k6JcoWu_p6y6TCV5br-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="ent_cust" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="SDT" vertex="1">
+          <mxGeometry height="50" width="70" x="130" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="địa chỉ" vertex="1">
+          <mxGeometry height="50" width="70" x="160" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="hãng sx" vertex="1">
+          <mxGeometry height="60" width="80" x="650" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="đơn giá" vertex="1">
+          <mxGeometry height="50" width="70" x="740" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="số lượng còn" vertex="1">
+          <mxGeometry height="50" width="70" x="790" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-14" edge="1" parent="1" source="ent_prod" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.414;entryY=0.031;entryDx=0;entryDy=0;entryPerimeter=0;" target="T3k6JcoWu_p6y6TCV5br-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Ngày đặt hàng" vertex="1">
+          <mxGeometry height="80" width="120" x="340" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="T3k6JcoWu_p6y6TCV5br-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Tổng tiền" vertex="1">
+          <mxGeometry height="80" width="120" x="340" y="380" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
